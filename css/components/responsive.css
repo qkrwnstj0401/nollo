@@ -1,0 +1,67 @@
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    .app-header {
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .logo {
+        order: 1;
+    }
+    
+    .search-container {
+        order: 3;
+        max-width: 100%;
+        margin: 10px 0 0;
+        width: 100%;
+    }
+    
+    .main-nav {
+        order: 2;
+    }
+    
+    .main-nav ul li {
+        margin-left: 10px;
+    }
+    
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        position: fixed;
+        left: -320px;
+        top: 0;
+        height: 100%;
+        transition: left 0.3s;
+        width: 280px;
+        z-index: 30;
+    }
+    
+    .sidebar.active {
+        left: 0;
+    }
+    
+    .close-sidebar-btn {
+        display: block;
+    }
+    
+    .sidebar-toggle {
+        display: flex;
+    }
+    
+    .map-area {
+        flex: 1;
+    }
+    
+    .filter-options {
+        overflow-x: auto;
+        padding-bottom: 10px;
+        flex-wrap: nowrap;
+    }
+    
+    .filter-btn {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+} 

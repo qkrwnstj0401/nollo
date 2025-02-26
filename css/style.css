@@ -1,0 +1,6 @@
+/* 모든 CSS 파일을 임포트 */
+@import 'base.css';
+@import 'components/header.css';
+@import 'components/sidebar.css';
+@import 'components/map.css';
+@import 'components/responsive.css'; 
